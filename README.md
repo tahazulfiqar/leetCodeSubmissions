@@ -25,3 +25,10 @@ nth attempt: It took me a while, but I realized that I didn't need to store the 
 It is better for max profits if you find the smallest value - hence checking the value of buy_val to see if you've found it. If you find higher values later on, check to see if it maximizes the profits by subtracting it from the small buy_val.  
 
 Runtime O(n)
+
+
+https://leetcode.com/problems/contains-duplicate/
+
+Straightforward problem - you simply check if dup_dict contains the current item iteration and if it does, there is a duplicate. If not, then add it to the dictionary and go onto the next iteration. For python, you can also use an array and check, but I believe hashmaps would be used in theory.
+
+Runtime O(n), space O(n)
