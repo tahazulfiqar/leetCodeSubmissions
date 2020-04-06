@@ -32,3 +32,12 @@ https://leetcode.com/problems/contains-duplicate/
 Straightforward problem - you simply check if dup_dict contains the current item iteration and if it does, there is a duplicate. If not, then add it to the dictionary and go onto the next iteration. For python, you can also use an array and check, but I believe hashmaps would be used in theory.
 
 Runtime O(n), space O(n)
+
+
+https://leetcode.com/problems/product-of-array-except-self/
+
+Brute force solution: Essentially you loop through the array, and if the current outer iteration matches the index in the array, you skip that multiplication. When the inner loop reaches the length of the list, it is time to update the result product array, reset the inner loop and increment the outer loop.  
+
+Better Solution: It took a bit of out of the box thinking, I think this is sort of like a dynamic programming approach - where you build the solution for the products to the left of the current element for each index in the result array. Then, you reverse nums backwards to get the right products and multiply at that index. You can skip the very last index of the right array because the product is already 1. 
+
+Runtime O(n), space O(1)
