@@ -17,7 +17,7 @@ class Solution(object):
                 running_sum = 0
                 stored_sums.append(running_sum)
                 
-                if num > smallest_neg:
+                if not seen_positive and num > smallest_neg:
                     smallest_neg = num
                     
                 
