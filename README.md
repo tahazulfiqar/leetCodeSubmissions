@@ -41,3 +41,10 @@ Brute force solution: Essentially you loop through the array, and if the current
 Better Solution: It took a bit of out of the box thinking, I think this is sort of like a dynamic programming approach - where you build the solution for the products to the left of the current element for each index in the result array. Then, you reverse nums backwards to get the right products and multiply at that index. You can skip the very last index of the right array because the product is already 1. 
 
 Runtime O(n), space O(1)
+
+
+04/07/2020: 
+
+https://leetcode.com/problems/maximum-subarray/
+
+Approach: Generate an array of sum arrived to at that index - only if the sum is positive - otherwise place a 0 in the array. This is to handle the case of an array that may be like [-3, 2, 1, -7]. Your max_sum in this would be [2, 1] and your corresponding stored_sums will be [0, 2, 3, 0]. To handle the corner case with only negative numbers, you only want to include the highest negative number as part of the sum - this is kept track of in smallest_neg. If by the end of the iteration we've seen only negative numbers, then we return this smallest_neg. 
