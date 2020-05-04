@@ -1,6 +1,4 @@
 # leetCodeSubmissions
-Trying to do at least one leetcode problem a day
-
 https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
 04/06/2020: 
